@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Telefonnummer</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+   <!-- <link rel="stylesheet" type="text/css" href="css/space.css" title="space" media="screen" />
+    <script type="text/javascript" src="js/websocket.js"></script> -->
+    
+    <script language="javascript" type="text/javascript" src="js/vuedev.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div id ="app">
+            <div v-on:click="goBack" class="zurueckKnopf ganzelement" v-if="page != 'start'" v-bind:class="page">
+                ← Zurück
+            </div>
+            <div v-if="error != ''" class="errorDiv" v-bind:class="page">
+                <div class="errorDivTitle">
+                    Fehler
+                </div>
+                <div class="errorDivContent">
+                    <p class="loginErrorP">{{ error }}</p>
+                </div>
+            </div>
+            <div v-if="info != ''" class="infoDiv" v-bind:class="page">
+                <div class="infoDivTitle">
+                    Hinweis
+                </div>
+                <div class="infoDivContent">
+                    <p class="loginErrorP">{{ info }}</p>
+                </div>
+            </div>
+            <div class="start mainDiv" v-if="page == 'start'">
+                <div class="startbox aktor">
+                    <h2>Telefonnummer eingeben</h2>
+                    <input v-model="phoneNumberInput" type="text" class="ganzelement aktor1">
+                        
+                    </input>
+                    <div v-on:click="checkPhoneNumber" class="ganzelement aktor1">
+                        Absenden
+                    </div>
+                </div>
+                <div class="startbox output">
+                    <h2> Telefonnummer nach DIN 5008</h2>
+                    <div class="ganzelement output">
+                        {{ phoneNumberOutput.prefixNumber }} {{ phoneNumberOutput.areaCode }} {{ phoneNumberOutput.phoneNumber }}<span v-if="phoneNumberOutput.phoneExtension.length > 0"> {{ phoneNumberOutput.phoneExtension }} </span>
+                    </div>
+                </div>
+            </div>
+
+            <div v-else>
+                Error
+            </div>
+        </div>
+        <script language="javascript" type="text/javascript" src="js/main.js"></script>
+    </main>
+    <footer>
+  </footer>
+</body>
+</html>

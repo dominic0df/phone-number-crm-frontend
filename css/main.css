@@ -1,0 +1,174 @@
+body {
+    background-color: #555;
+}
+
+main {
+   /* margin-top: var(--headerheight, 100px);
+    margin-bottom: var(--footerheight, 40px); */
+    width: 100%;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 25px;
+}
+
+h2{
+	font-size:175%;
+	margin: 0;	
+	margin-top:2px;
+	margin-bottom: 5px;
+	padding: 0px;
+	font-weight: normal;
+}
+
+.mainDiv {
+    /*padding: 50px;*/   
+    display: inline-block;
+    width: 100%;
+}
+
+.startbox{
+    float: left;
+	width: 47%;
+	padding: 1%;
+	height: 200px;
+    margin: 0.5%;
+   /* box-sizing: border-box; */
+}
+
+.halbelement{
+    float: left;
+    width: 47%;
+	padding: 1%;
+    margin: 0.5%;
+    border: none;
+    height: 15pt;
+}
+
+.ganzelement{
+    float: left;
+    width: 97%;
+	padding: 1%;
+    margin: 0.5%;
+    border: none;
+    height: 15pt;
+    text-align: center;
+}
+
+.ganzbox{
+    float: left;
+    width: 98%;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 1%;
+} 
+
+.halbbox{
+    float: left;
+    width: 48%;
+    padding: 1%;
+    box-sizing: border-box;
+    margin: 1%;
+} 
+
+/* Startpage (= sp) */
+
+.spname{
+    width:80%;
+    float:left;
+	border: none;
+	padding: 1%;
+	font-size: 110%;
+	margin: auto;
+	margin-left:2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.spvalue {
+    float:left;
+	border: none;
+	padding:1%;
+	font-size: 110%;
+	margin: auto;
+	margin-left:2%;
+    width: 10%;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.ddhalbnebenplus{
+    width: 42%;
+    height: 45px;
+    padding: 1%;
+    float: left;
+    margin: 0.5%;
+} 
+
+.nebenplus{
+    width: 4%;
+    height: 15pt;
+    padding: 1%;
+    float: left;
+    margin: 0,5%;
+    text-align: center;
+} 
+
+/* --- Farben / Colours --- */
+
+.sensor {
+    background-color: rgba(195, 53 , 36, 1);
+}
+
+.aktor {
+    background-color: rgba(53, 65 , 117, 1);
+}
+
+.aktor1 {
+    background-color: rgb(40, 59, 141);
+}
+
+.aktor2 {
+    background-color: rgb(37, 52, 117);
+}
+
+.sensor1 {
+    background-color: rgba(193, 17, 11, 0.9);
+}
+
+.sensor1:hover {
+    color: white; 
+	background-color: rgba(162, 0, 0, 0.9);
+}
+
+.sensor2 {
+    background-color: rgba(231, 49, 17, 0.9);
+}
+
+.status {
+    background-color: rgba(35, 128, 35, 0.75);
+}
+
+.output {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.geraet{
+    background-color: rgba(35, 128, 35, 0.75);
+} 
+
+.geraet1{
+    background-color: rgba(35, 128, 70, 0.75);
+} 
+
+.zurueckKnopf{
+    text-align: left !important;
+    background-color: rgba(99,99,99,1);
+}
+
+.zurueckKnopf:hover{
+    background-color: rgba(40,40,40,1);
+    color: white;
+}
