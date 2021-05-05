@@ -50,7 +50,7 @@ var app = new Vue({
             // Sendet die an "phoneNumberInput" gebundene Telefonnummer an das Backend und schiebt diese in "phoneNumberOutput", welches diese anzeigt
             checkPhoneNumber: function (){
                 fetch("http://localhost:5000/hierkommtdasBackendrein", {
-                    body: JSON.stringify(this.phoneNumberInput),
+                    body: JSON.stringify({phoneNumberString: this.phoneNumberInput}),
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
